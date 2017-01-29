@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rollnochecker</title>
+	<script type = "text/javascript" src = "check.js"></script>
+	<style>
+	#btn{
+	background-color:#bdc3c7;
+	height: 40px;
+	width: 80px;
+	border: none;
+	cursor: pointer;
+	}
+	#btn:hover{
+		background-color: #16a085;
+		/*text-transform: uppercase;*/
+	}
+	#roll{
+		border-color: #bdc3c7;
+		height: 25px;
+		width: 120px;
+		border: none;
+	}
+	#roll:hover{
+		border: 2px solid;
+		border-color: yellow;
+	}
+	</style>
+</head>
+<body bgcolor="#bdc3c7">
+<center>
+<div>
+<div style="height:30px;padding:20px;">Welcome to Rollno Validator</div>
+<div><input type = "text" placeholder = "Enter Rollno" id = "roll" name = "rollno" /></div>
+<p><div><input type = "button" id = "btn" value = "DETAILS" /></div></p>
+<div id = "display" style = "display:none; background-color:#95a5a6; padding:10px; width:400px;"></div>
+</div>
+</center>
+</body>
+</html>
