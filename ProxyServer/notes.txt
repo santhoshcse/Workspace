@@ -1,0 +1,7 @@
+python proxy.py <request_url>
+
+For sample request_url:
+run following in cmd,
+python -m http.server <port> --bind 127.0.0.1
+
+request_url can be of http, https, file

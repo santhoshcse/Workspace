@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contacts Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="title.png" type="image/png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="header">
+            <h1 id="site-title" class="text-body">
+                <img src="title.png" alt="title icon" height="25" width="25" class="img-fluid">
+                Contacts Manager
+            </h1>
+        </div>
+        <div id="body" class="container-fluid">
+            <div class="row">
+                <div id="create-update-form" class="col-4">
+                    <div>
+                        <form id="validate">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><label class="required" for="name">Name</label></td>
+                                    <td><input type="text" id="name" class="form-control" size="24" autocomplete="off"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="required" for="phone">Mobile Number</label></td>
+                                    <td><input type="tel" id="phone" class="form-control" maxlength="10" size="24" autocomplete="off"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="email">E-Mail</label></td>
+                                    <td><input type="email" id="email" class="form-control" size="24" autocomplete="off"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="dob">DOB</label></td>
+                                    <td><input type="date" id="dob" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="address">Address</label></td>
+                                    <td><textarea id="address" class="form-control" rows="3" cols="26"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="state">State</label></td>
+                                    <td>
+                                        <select name="States" id="state" class="form-control">
+                                            <option value="Select State" style="background-color:darkgray">Select State</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        <input type="button" id="Add-Contact" class="opt-btn btn btn-primary" value="Create">
+                                        <input type="button" id="Update-Contact" class="opt-btn btn btn-primary" value="Update">
+                                    </td>
+                                    <td>
+                                        <input type="button" id="Reset" class="opt-btn btn btn-info" value="Reset">
+                                        <input type="button" id="Cancel" class="opt-btn btn btn-info" value="Cancel">
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        </form>
+                    </div>
+                    <br>
+                    <div id="Notification">
+                        <button type="button" class="close">&times;</button>
+                        <p id="Msg"></p>
+                    </div>
+                </div>
+                <div id="view-point" class="col-8">
+                    <div id="option-header">
+                        <input id="toggle-form" type="button" class="opt-btn btn btn-info" value="Show/Hide Form">
+                        <input id="Select-All" type="button" class="opt-btn btn btn-info" value="Select All">
+                        <input id="UnSelect-All" type="button" class="opt-btn btn btn-info" value="Deselect All">
+                        <input id="Delete" type="button" class="opt-btn btn btn-danger" value="Delete" title="Delete Selected Rows">
+                    </div>
+                    <br>
+                    <div id="contacts-list" class="table-responsive-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="index.js"></script>
+<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website&amp;utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
+</html>
