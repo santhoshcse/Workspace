@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FirebaseSample</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDwVks8DgL3EFXuQBlmC3hEGjEMtuv6UA0",
+      authDomain: "fir-sample-77200.firebaseapp.com",
+      databaseURL: "https://fir-sample-77200.firebaseio.com",
+      projectId: "fir-sample-77200",
+      storageBucket: "fir-sample-77200.appspot.com",
+      messagingSenderId: "338923634281",
+      appId: "1:338923634281:web:9ddbb0273d4929c3806cf8",
+      measurementId: "G-1R9QTJQRLZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</body>
+</html>

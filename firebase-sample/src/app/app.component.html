@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let book of books; let i;">
+    <!-- <input type="radio" [value]="'value ' + i" name="books"> -->
+    <pre>{{ book.payload.doc.data().title }}</pre>
+    <button (click)="delete(book)">Delete a book!</button>
+    <button (click)="update(book)">Update a book!</button>
+  </li>
+</ul>
+<button (click)="add()">Add a book!</button>
